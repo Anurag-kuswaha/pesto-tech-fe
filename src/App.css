@@ -49,6 +49,7 @@ body{
   border-radius: 3px;
   border: 0px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .listWrapper{
   display: flex;
@@ -59,7 +60,7 @@ body{
 .rowWrapper{
   width: 30%;
   background-color: #B3E7D8;
- 
+  position: relative;
   border-radius: 20px;
   margin: 10px;
   padding:10px;
@@ -75,6 +76,7 @@ body{
   position: relative;
   >h1 {
     width: 70%;
+    margin-top:0px;
   }
   div {
     max-width: 30%;
@@ -93,19 +95,98 @@ body{
   .InProgress {
     background: rgb(250, 239, 184);
     color: rgb(211, 165, 0);
+    margin-right: 30px
   }
   .Done {
     background: rgb(213, 243, 183);
     color: rgb(100, 178, 22);
   }
 }
-
+.ReactModalPortal h2{
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1D5E6D;
+}
+.popup-close{
+  position: absolute;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    top: 30px;
+}
 .popup-body{
-
+  button {
+    min-width: 100px;
+    min-height: 40px;
+    color: white;
+    background-color: #1D5E6D;
+    border-radius: 3px;
+    border: 0px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+}
+.popup-row {
+  margin-bottom: 20px;
+  font-size: 20px;
+  label{
+    display: block;
+  }
+   input{
+    width: 430px;
+  height: 56px;
+  top: 175px;
+  left: 56px;
+  padding: 16px 24px 16px 24px;
+  gap: 8px;
+  border-radius: 16px;
+  opacity: 1;
+  border: 0;
+  background: #F7F9FA;
+  
+  }
+  &.status{
+    label {
+      margin-right: 10px;
+    }
+    justify-content: center;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 524px) {
+  .popup-row input{  
+    max-width: 270px;
+}
 }
 .edit-button {
   position: absolute;
     right: 0;
     font-size : 25px;
     cursor: pointer
+}
+.description-wrapper{
+  position: relative;
+  .description{
+    padding-right: 20px;
+  }
+}
+.delete-button{
+  position: absolute;
+  right: 0;
+  font-size : 25px;
+  cursor: pointer;
+  bottom: 5px;
+}
+.filter{
+  label{
+    font-size: 25px;
+    font-weight: 500;
+  }
+#status-filter{
+    width: 100px;
+    height: 30px;
+    background: #B3E7D8;
+}
 }
