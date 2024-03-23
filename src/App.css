@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  
+}
+body{
+  background-color: rgb(245 239 230) !important;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +40,72 @@
   to {
     transform: rotate(360deg);
   }
+}
+.addTask{
+  min-width: 100px;
+  min-height: 40px;
+  color: white;
+  background-color: #1D5E6D;
+  border-radius: 3px;
+  border: 0px;
+  margin-bottom: 30px;
+}
+.listWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.rowWrapper{
+  width: 30%;
+  background-color: #B3E7D8;
+ 
+  border-radius: 20px;
+  margin: 10px;
+  padding:10px;
+ 
+}
+@media only screen and (max-width : 524px){
+  .rowWrapper{
+    width: 100%;
+  }
+}
+.title-wrapper{
+  display: flex;
+  position: relative;
+  >h1 {
+    width: 70%;
+  }
+  div {
+    max-width: 30%;
+    align-items: center;
+    display: flex;
+    max-height:30px;
+    background: #E3F0ED;
+    color: #64B216;
+    border-radius: 10px;
+    padding: 4px;
+  }
+  .TODO {
+    background: rgb(245, 219, 219);
+    color: rgb(252, 88, 88);
+  }
+  .InProgress {
+    background: rgb(250, 239, 184);
+    color: rgb(211, 165, 0);
+  }
+  .Done {
+    background: rgb(213, 243, 183);
+    color: rgb(100, 178, 22);
+  }
+}
+
+.popup-body{
+
+}
+.edit-button {
+  position: absolute;
+    right: 0;
+    font-size : 25px;
+    cursor: pointer
 }
