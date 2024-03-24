@@ -132,7 +132,7 @@ function Tasks() {
     ))
 
     return <>
-        <h1> Pesto Tech : Full-Stack Developer Challenge</h1>
+        <h1> Task Manager : Pesto Tech - Full-Stack Developer Challenge</h1>
         <button className='addTask' onClick={() => { setStatus('TODO'); setSubtitle('Add Task'); setPopupType('Add'); setOpenPopup(true) }}> Add Task</button>
 
         <div className='filter'>
